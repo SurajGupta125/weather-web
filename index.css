@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    /* background: linear-gradient(160deg, #64f0d8 0%, #3db8ff 50%, #1177ea 100%); */
+    background: linear-gradient(160deg, #64f0d8 -61%, #3db8ff 3%, #1177ea 48%);
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    color: #ebebeb;
+}
+
+.weather-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    border-radius: 20px;
+    max-width: 450px;
+    padding: 20px 30px;
+    margin: auto;
+    box-shadow: 0 10px 30px rgba(11, 99, 214, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.weather-card .input {
+    border-radius: 22px;
+    background-color: #86eaffab;
+    color: #ffffff;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#btn {
+    padding: 7px 16px;
+    border-radius: 22px;
+    background: transparent !important;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.input input {
+    outline: none;
+    padding: 7px;
+    padding-left: 30px;
+    border-radius: 22px;
+    flex-grow: 1;
+    border: none;
+    color: #ffffff;
+    background-color: initial
+}
+
+::placeholder {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.fa-solid {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.weather-info {
+    margin-top: 30px;
+}
+
+.city-Name {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.country-code {
+    color: #e5e2e2;
+    font-weight: 200;
+}
+
+.curtime-Date {
+    color: #e5e2e2;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.fa-solid {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    left: 0px;
+    color: black;
+}
+
+.weather-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+    padding-left: 20px;
+    gap: 40px;
+}
+
+.weather-icon .image {
+    width: 100px;
+}
+
+.weather-icon .image img {
+    background-color: transparent;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.city-temp {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+}
+
+.description .des {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.minmax-temp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.minmax-temp li {
+    color: #e8e7e7;
+
+}
+
+.minmax-temp li:nth-of-type(1) {
+    list-style-type: none;
+}
+
+.minmax-temp li:nth-of-type(2) {
+    list-style-type: none;
+}
+
+.minmax-temp li:nth-of-type(3) {
+    list-style-type: none;
+}
+
+.temp-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.temp-info div {
+    background-color: #a1efffab;
+    padding: 7px 15px;
+    border-radius: 12px;
+    width: 47.3%;
+    height: fit-content;
+    font-weight: 200;
+    font-weight: 1.5px;
+    text-align: center;
+    color: #fff2f2;
+}
+
+.temp-info div span {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: start;
+}
+
+@media(max-width:500px) {
+    .city-temp {
+        font-size: 26px;
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+
+    .weather-card .input {
+        margin-top: 8px;
+        position: relative;
+    }
+
+    .weather-info {
+        margin-top: 8px;
+    }
+
+    .city-Name {
+        font-size: 28px;
+    }
+
+    .weather-icon,
+    .temp-info {
+        margin-top: 15px;
+    }
+
+    .minmax-temp {
+        margin-top: 0px;
+    }
+
+    #btn {
+        position: absolute;
+        right: 0px;
+        color: black;
+    }
+}
+
+@media(max-width:370px) {
+    .temp-info div {
+        width: 100%;
+        height: fit-content;
+    }
+    .weather-card{
+        position: absolute;
+        top: 0;
+    }
+}
