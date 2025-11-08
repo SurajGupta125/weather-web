@@ -6,6 +6,8 @@ This is a simple Weather App that I built using HTML, CSS, and JavaScript.
 With this app, I can search the weather of any city or even a small place in India.
 All the weather data comes from the OpenWeather API.
 
+LIVE : https://surajgupta125.github.io/weather-web/
+
 Features
 
 Search weather of any place in India
